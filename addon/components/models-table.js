@@ -48,15 +48,15 @@ const defaultMessages = {
 };
 
 const defaultIcons = {
-  'sort-asc': 'glyphicon glyphicon-triangle-bottom',
-  'sort-desc': 'glyphicon glyphicon-triangle-top',
-  'column-visible': 'glyphicon glyphicon-check',
-  'column-hidden': 'glyphicon glyphicon-unchecked',
-  'nav-first': 'glyphicon glyphicon-chevron-left',
-  'nav-prev': 'glyphicon glyphicon-menu-left',
-  'nav-next': 'glyphicon glyphicon-menu-right',
-  'nav-last': 'glyphicon glyphicon-chevron-right',
-  'caret': 'caret'
+  'sort-asc': 'fa fa-caret-square-o-down',
+  'sort-desc': 'fa-caret-square-o-up',
+  'column-visible': 'fa fa-check-square-o',
+  'column-hidden': 'fa fa-square-o',
+  'nav-first': 'fa fa-angle-double-left',
+  'nav-prev': 'fa fa-angle-left',
+  'nav-next': 'fa fa-angle-double-right',
+  'nav-last': 'fa fa-angle--right',
+  'caret': 'fa fa-caret-down'
 };
 
 const defaultCssClasses = {
@@ -469,7 +469,7 @@ export default Ember.Component.extend({
   pageSizeObserver: observer('pageSize', function () {
     set(this, 'currentPageNumber', 1);
   }),
-  
+
   /**
    * Open first page if user has changed filterString
    *
