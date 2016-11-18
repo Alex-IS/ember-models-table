@@ -49,7 +49,7 @@ const defaultMessages = {
 
 const defaultIcons = {
   'sort-asc': 'fa fa-sort-asc',
-  'sort-desc': 'fa-sort-desc',
+  'sort-desc': 'fa fa-sort-desc',
   'column-visible': 'fa fa-check-square-o',
   'column-hidden': 'fa fa-square-o',
   'nav-first': 'fa fa-angle-double-left',
